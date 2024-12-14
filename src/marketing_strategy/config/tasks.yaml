@@ -1,17 +1,41 @@
-research_task:
+market_research_task:
   description: >
-    Conduct a thorough research about {topic}
-    Make sure you find any interesting and relevant information given
-    the current year is 2024.
+    Conduct an in-depth analysis of the mobile phone market for 2024.
+    Investigate market trends, consumer preferences, competitor strategies, 
+    and potential market opportunities.
   expected_output: >
-    A list with 10 bullet points of the most relevant information about {topic}
+    A comprehensive market research report with:
+    - Top 10 market insights
+    - Consumer preference analysis
+    - Competitive landscape overview
+    - Emerging technology trends
+    - Potential market opportunities
   agent: researcher
 
-reporting_task:
+strategy_development_task:
   description: >
-    Review the context you got and expand each topic into a full section for a report.
-    Make sure the report is detailed and contains any and all relevant information.
+    Based on the market research, develop a comprehensive marketing strategy 
+    for the mobile phone brand. Identify target segments, positioning, 
+    and key marketing initiatives.
   expected_output: >
-    A fully fledge reports with the mains topics, each with a full section of information.
-    Formatted as markdown without '```'
-  agent: reporting_analyst
+    A detailed marketing strategy document including:
+    - Target market segments
+    - Unique value proposition
+    - Marketing channel strategy
+    - Key messaging and positioning
+    - Proposed marketing campaigns
+  agent: marketing_strategist
+
+product_positioning_task:
+  description: >
+    Develop a detailed product positioning strategy that highlights 
+    the unique features and benefits of the mobile phone brand.
+    Create a compelling narrative that differentiates the product 
+    in the competitive mobile phone market.
+  expected_output: >
+    A comprehensive product positioning document with:
+    - Detailed value proposition
+    - Competitive differentiation strategy
+    - Brand storytelling framework
+    - Key selling points and unique features
+  agent: product_positioning_expert
